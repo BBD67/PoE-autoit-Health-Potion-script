@@ -19,7 +19,7 @@ Func CheckColor()
     
     Local $color = PixelGetColor($posX, $posY)
     
-    If Hex($color, 6) <> "7D2E2F" Then
+    If Hex($color, 6) <> "7D2E2F" Then ; Set here HEX color, default is 7D2E2F
         Local $delay = Random(500, 1500, 1) ; Randomise time, default is between 500 and 1500 miliseconds
         Sleep($delay)
         Send("1")
